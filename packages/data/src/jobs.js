@@ -839,8 +839,5 @@ export const jobs = [
     applyUrl: 'https://swiggy.com/careers/60',
     description: 'Work on consumer-facing features with focus on performance and quality. Collaborate with design and product to deliver cohesive experiences.'
   }
-]
-
-// Minimal jobs export placeholder. Full curated dataset will be added in the jobs-dataset step.
-export const jobs = []
+];
 
