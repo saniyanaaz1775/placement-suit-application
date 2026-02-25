@@ -22,6 +22,14 @@ a{color:inherit;text-decoration:none}
 @tailwind components;
 @tailwind utilities;
 
+/* Print styles for resume preview */
+@media print {
+  body { background: #fff !important; color: #000 !important; }
+  nav, .desktop-nav, .mobile-nav, .ProofFooter, button { display: none !important; }
+  .container, main { max-width: 720px; margin: 0 auto; }
+  .card { box-shadow: none !important; border: none !important; }
+}
+
 /* Responsive nav visibility */
 @media (max-width: 768px) {
   .desktop-nav { display: none !important; }

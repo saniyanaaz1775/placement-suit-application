@@ -11,4 +11,5 @@ export { default as Toggle } from './components/Toggle'
 export { default as Modal } from './components/Modal'
 export { default as NavLink } from './components/NavLink'
 export { default as Field } from './components/Field'
+export { default as TagInput } from './components/TagInput'
 
