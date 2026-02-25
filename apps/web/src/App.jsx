@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, Link, useLocation } from 'react-router-dom'
 import TopBar from '../../../packages/ui/src/components/TopBar'
 import ContextHeader from '../../../packages/ui/src/components/ContextHeader'
 import LandingPage from './pages/LandingPage'
@@ -16,6 +16,8 @@ import DigestPage from './pages/DigestPage'
 import ProofFooter from '../../../packages/ui/src/components/ProofFooter'
 
 export default function App() {
+  const loc = useLocation()
+  const hideSecondary = loc.pathname === '/dashboard'
   return (
     <div style={{ background: '#F7F6F3', minHeight: '100vh', color: '#111111' }}>
       <TopBar />
@@ -36,12 +38,14 @@ export default function App() {
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>
-        <aside style={{ flex: 3 }}>
-          <div style={{ border: '1px solid #e6e2dd', padding: 16, borderRadius: 8 }}>
-            <h4 style={{ fontFamily: 'serif' }}>Secondary Panel</h4>
-            <p style={{ marginTop: 8 }}>Step explanation and actions</p>
-          </div>
-        </aside>
+        {!hideSecondary && (
+          <aside style={{ flex: 3 }}>
+            <div style={{ border: '1px solid #e6e2dd', padding: 16, borderRadius: 8 }}>
+              <h4 style={{ fontFamily: 'serif' }}>Secondary Panel</h4>
+              <p style={{ marginTop: 8 }}>Step explanation and actions</p>
+            </div>
+          </aside>
+        )}
       </div>
       <ProofFooter />
     </div>
