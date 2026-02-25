@@ -1,6 +1,6 @@
 import React from 'react'
-import Input from '../../../packages/ui/src/components/Input'
-import Select from '../../../packages/ui/src/components/Select'
+import Input from '../../../../packages/ui/src/components/Input'
+import Select from '../../../../packages/ui/src/components/Select'
 
 export default function SettingsPage() {
   return (

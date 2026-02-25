@@ -1,7 +1,7 @@
 import React from 'react'
-import { jobs } from '../../../packages/data/src/jobs'
-import Card from '../../../packages/ui/src/components/Card'
-import Button from '../../../packages/ui/src/components/Button'
+import { jobs } from '../../../../packages/data/src/jobs'
+import Card from '../../../../packages/ui/src/components/Card'
+import Button from '../../../../packages/ui/src/components/Button'
 
 export default function SavedPage() {
   const [saved, setSaved] = React.useState(() => {

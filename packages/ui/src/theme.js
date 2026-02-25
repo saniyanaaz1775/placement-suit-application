@@ -11,7 +11,13 @@ export const tokens = {
     small: 16,
     medium: 24,
     large: 40,
-    xlarge: 64
+    xlarge: 64,
+    // tailwind mapping keys
+    t2: 8,
+    t4: 16,
+    t6: 24,
+    t10: 40,
+    t16: 64
   },
   radius: 8,
   typography: {

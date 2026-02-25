@@ -1,8 +1,8 @@
 import React from 'react'
-import Input from '../../../packages/ui/src/components/Input'
-import Button from '../../../packages/ui/src/components/Button'
-import Card from '../../../packages/ui/src/components/Card'
-import { useStore } from '../../../packages/state/src/store'
+import Input from '../../../../packages/ui/src/components/Input'
+import Button from '../../../../packages/ui/src/components/Button'
+import Card from '../../../../packages/ui/src/components/Card'
+import { useStore } from '../../../../packages/state/src/store'
 import { v4 as uuidv4 } from 'uuid'
 
 const SKILL_CATEGORIES = {
@@ -145,15 +145,3 @@ export default function AnalyzePage() {
     </div>
   )
 }
-
-import React from 'react'
-
-export default function AnalyzePage() {
-  return (
-    <div>
-      <h1 style={{ fontFamily: 'serif', fontSize: 36 }}>Analyze</h1>
-      <p style={{ color: '#6b6b6b' }}>This section will be built in the next step.</p>
-    </div>
-  )
-}
-

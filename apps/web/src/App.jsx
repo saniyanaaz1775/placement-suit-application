@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
-import TopBar from '../../packages/ui/src/components/TopBar'
-import ContextHeader from '../../packages/ui/src/components/ContextHeader'
+import TopBar from '../../../packages/ui/src/components/TopBar'
+import ContextHeader from '../../../packages/ui/src/components/ContextHeader'
 import LandingPage from './pages/LandingPage'
 import JobsPage from './pages/JobsPage'
 import AnalyzePage from './pages/AnalyzePage'
@@ -13,7 +13,7 @@ import ProofPage from './pages/ProofPage'
 import NotFoundPage from './pages/NotFoundPage'
 import SavedPage from './pages/SavedPage'
 import DigestPage from './pages/DigestPage'
-import ProofFooter from '../../packages/ui/src/components/ProofFooter'
+import ProofFooter from '../../../packages/ui/src/components/ProofFooter'
 
 export default function App() {
   return (

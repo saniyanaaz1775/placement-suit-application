@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../../../packages/ui/src/components/Button'
+import Button from '../../../../packages/ui/src/components/Button'
 
 export default function LandingPage() {
   return (

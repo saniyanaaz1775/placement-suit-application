@@ -1,10 +1,11 @@
 import React from 'react'
-import { jobs } from '../../../packages/data/src/jobs'
-import Card from '../../../packages/ui/src/components/Card'
-import Button from '../../../packages/ui/src/components/Button'
-import { useStore } from '../../../packages/state/src/store'
+import { jobs } from '../../../../packages/data/src/jobs'
+import Card from '../../../../packages/ui/src/components/Card'
+import Button from '../../../../packages/ui/src/components/Button'
+import { useStore } from '../../../../packages/state/src/store'
 
 function JobCard({ job, onView, onSave }) {
+  const setJobStatus = useStore(s=>s.setJobStatus)
   return (
     <Card style={{ marginBottom: 16 }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start' }}>
@@ -22,6 +23,17 @@ function JobCard({ job, onView, onSave }) {
         <Button onClick={() => onView(job)} variant="secondary">View</Button>
         <Button onClick={() => onSave(job.id)}>Save</Button>
         <Button onClick={() => window.open(job.applyUrl, '_blank')} variant="secondary">Apply</Button>
+        <select aria-label="status" onChange={(e)=> {
+          const status = e.target.value
+          setJobStatus(job.id, status)
+        }} style={{ marginLeft: 'auto', padding:8, borderRadius:6 }}>
+          <option>Not Applied</option>
+          <option>Applied</option>
+          <option>Interview Scheduled</option>
+          <option>Interview Completed</option>
+          <option>Selected</option>
+          <option>Rejected</option>
+        </select>
       </div>
     </Card>
   )
