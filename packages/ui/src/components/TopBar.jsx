@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { tokens } from '../theme'
-import { useStore } from '../../../packages/state/src/store'
+import { useStore } from '../../../state/src/store'
 
 const links = [
   { to: '/dashboard', label: 'Dashboard' },
