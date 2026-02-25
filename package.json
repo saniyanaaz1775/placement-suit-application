@@ -11,5 +11,8 @@
     "build": "npm --workspace=apps/web run build",
     "preview": "npm --workspace=apps/web run preview",
     "lint": "echo \"No linter configured\""
+  },
+  "dependencies": {
+    "uuid": "^13.0.0"
   }
 }
