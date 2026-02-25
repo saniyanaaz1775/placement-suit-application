@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { tokens } from '../theme'
+import { useStore } from '../../../packages/state/src/store'
 
 const links = [
   { to: '/dashboard', label: 'Dashboard' },
@@ -17,6 +18,10 @@ const links = [
 export default function TopBar() {
   const loc = useLocation()
   const [open, setOpen] = React.useState(false)
+  const prefs = useStore ? useStore(s => s.preferences || {}) : {}
+  const step = prefs.step || 1
+  const total = prefs.totalSteps || 8
+
   return (
     <div style={{
       display: 'flex',
