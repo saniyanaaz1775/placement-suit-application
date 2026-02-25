@@ -18,12 +18,6 @@ const links = [
 export default function TopBar() {
   const loc = useLocation()
   const [open, setOpen] = React.useState(false)
-  const prefs = useStore ? useStore(s => s.preferences || {}) : {}
-  const step = prefs.step || 1
-  const total = prefs.totalSteps || 8
- 
-  const hideStep = loc.pathname === '/dashboard'
-
   return (
     <div style={{
       display: 'flex',
@@ -35,11 +29,6 @@ export default function TopBar() {
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
         <div style={{ fontWeight: 700 }}>Job Notification App</div>
-        {!hideStep && (
-          <div style={{ color: tokens.colors.muted, padding: '4px 8px', borderRadius: 6, border: `1px solid ${tokens.colors.cardBorder}`, fontSize: 13 }}>
-            Step {step} / {total}
-          </div>
-        )}
       </div>
       <nav style={{ display: 'flex', gap: 24 }}>
         <div className="desktop-nav" style={{ display: 'flex', gap: 24 }}>

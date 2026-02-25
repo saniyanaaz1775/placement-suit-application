@@ -38,14 +38,7 @@ export default function App() {
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>
-        {!hideSecondary && (
-          <aside style={{ flex: 3 }}>
-            <div style={{ border: '1px solid #e6e2dd', padding: 16, borderRadius: 8 }}>
-              <h4 style={{ fontFamily: 'serif' }}>Secondary Panel</h4>
-              <p style={{ marginTop: 8 }}>Step explanation and actions</p>
-            </div>
-          </aside>
-        )}
+        {/* Secondary panel removed per user request */}
       </div>
       <ProofFooter />
     </div>
