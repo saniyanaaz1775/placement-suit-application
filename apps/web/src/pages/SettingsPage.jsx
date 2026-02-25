@@ -6,7 +6,6 @@ export default function SettingsPage() {
   return (
     <div style={{ maxWidth: 720 }}>
       <h1 style={{ fontFamily: 'serif', fontSize: 36 }}>Settings</h1>
-      <p style={{ color: '#6b6b6b' }}>This section will be built in the next step.</p>
 
       <div style={{ marginTop: 24 }}>
         <Input label="Role keywords (comma separated)" placeholder="e.g. React, Java, Data Analyst" />
