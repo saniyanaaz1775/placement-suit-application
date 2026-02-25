@@ -18,10 +18,26 @@ Notes:
 - Before using Tailwind directives, install dev dependencies (tailwindcss, postcss, autoprefixer).
 - To build for production: `npm run build`
 
-Suggested next steps:
-1. Install dependencies locally.
-2. Commit the repository and push to GitHub.
-3. Connect the repository to Vercel and point the root build command to use the workspace (or set `apps/web` as the project root).
+### Deploy to Vercel
+
+The app builds from the **repo root** and outputs to `apps/web/dist`. Use one of these:
+
+**Option A – Deploy from Git (recommended)**  
+1. Push this repo to GitHub and connect it in [Vercel](https://vercel.com) (Import Project).  
+2. In the project **Settings → General → Build & Development Settings**:  
+   - **Root Directory:** leave empty (repo root).  
+   - **Build Command:** `npm run build` (or leave default; `vercel.json` sets it).  
+   - **Output Directory:** `apps/web/dist`.  
+3. Save and redeploy. If you still see “No Output Directory”, redeploy **without cache** (Deployments → … → Redeploy → clear cache).
+
+**Option B – Deploy from your machine**  
+1. Log in: `npx vercel login`  
+2. From the repo root: `npx vercel --prod`  
+3. Follow the prompts to link the project (or create a new one).
+
+`vercel.json` in the repo root already sets `outputDirectory` and `framework: null` so Vercel uses the monorepo output path.
+
+---
 
 This repository was scaffolded by an automated plan.
 
