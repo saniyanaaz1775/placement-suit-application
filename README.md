@@ -1,6 +1,6 @@
 # Placement Suite
 
-Monorepo that unifies Job Notification Tracker, Placement Readiness Platform, and AI Resume Builder.
+Monorepo that unifies Career Connect Tracker, Placement Readiness Platform, and AI Resume Builder.
 
 Structure:
 - apps/web — main SPA

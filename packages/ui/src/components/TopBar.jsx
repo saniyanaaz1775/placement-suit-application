@@ -28,7 +28,7 @@ export default function TopBar() {
       background: tokens.colors.background
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-        <div style={{ fontWeight: 700 }}>Job Notification App</div>
+        <div style={{ fontWeight: 700 }}>Career Connect </div>
       </div>
       <nav style={{ display: 'flex', gap: 24 }}>
         <div className="desktop-nav" style={{ display: 'flex', gap: 24 }}>
@@ -56,8 +56,7 @@ export default function TopBar() {
       </nav>
       <div>
         <span style={{ padding: '6px 10px', borderRadius: 999, border: `1px solid ${tokens.colors.cardBorder}` }}>
-          Not Started
-        </span>
+          Apply Now        </span>
       </div>
     </div>
   )
