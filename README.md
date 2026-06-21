@@ -1,4 +1,4 @@
-# Placement Suite
+# Career Connect
 
 Monorepo that unifies Career Connect Tracker, Placement Readiness Platform, and AI Resume Builder.
 

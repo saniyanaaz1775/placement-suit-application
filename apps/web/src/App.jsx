@@ -21,7 +21,7 @@ export default function App() {
   return (
     <div style={{ background: '#F7F6F3', minHeight: '100vh', color: '#111111' }}>
       <TopBar />
-      <ContextHeader title="Placement Suite" subtitle="Unified placement flow" />
+      <ContextHeader title="Career Connect" subtitle="Connect to Opportunities" />
       <div style={{ display: 'flex', gap: 24, padding: 24 }}>
         <main style={{ flex: 7 }}>
           <Routes>
