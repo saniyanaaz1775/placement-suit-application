@@ -1,8 +1,12 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import Input from '../../../../packages/ui/src/components/Input'
 import Select from '../../../../packages/ui/src/components/Select'
+import Button from '../../../../packages/ui/src/components/Button'
 
 export default function SettingsPage() {
+  const navigate = useNavigate()
+
   return (
     <div style={{ maxWidth: 720 }}>
       <h1 style={{ fontFamily: 'serif', fontSize: 36 }}>Settings</h1>
@@ -28,9 +32,10 @@ export default function SettingsPage() {
             </Select>
           </div>
         </div>
-        <Input label="Skills (comma separated)" placeholder="e.g. React, Node.js, SQL" />
+        <div style={{ marginTop: 20 }}>
+          <Button onClick={() => navigate('/dashboard')}>Save Preferences</Button>
+        </div>
       </div>
     </div>
   )
 }
-

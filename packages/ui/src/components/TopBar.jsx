@@ -7,12 +7,9 @@ const links = [
   { to: '/dashboard', label: 'Dashboard' },
   { to: '/jobs', label: 'Jobs' },
   { to: '/saved', label: 'Saved' },
-  { to: '/digest', label: 'Digest' },
-  { to: '/analyze', label: 'Analyze' },
   { to: '/resume', label: 'Resume' },
   { to: '/applications', label: 'Applications' },
-  { to: '/settings', label: 'Settings' },
-  { to: '/proof', label: 'Proof' }
+  { to: '/settings', label: 'Settings' }
 ]
 
 export default function TopBar() {
